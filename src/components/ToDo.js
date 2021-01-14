@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 
-export default class ToDo extends Component {
+export default class Todo extends Component {
+   constructor(props) {
+      super(props)
+   }
+
    render() {
       return (
          <div>
-            <li></li>
+            <p>{this.props.name}</p>
+            <button className="btn btn-main">Delete</button>
          </div>
       )
    }

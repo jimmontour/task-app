@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 
 export default class Header extends Component {
+   constructor(props) {
+      super(props)
+   }
+
    render() {
       return (
-         <div>
-            <header>
-               <h1>To Do List</h1>
-            </header>
-         </div>
+         <header>
+            <h1>Todo List:</h1>
+         </header>
       )
    }
 }
